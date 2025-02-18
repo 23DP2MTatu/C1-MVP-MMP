@@ -1,12 +1,71 @@
+html {
+    scroll-behavior:smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #FFFFFF;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-block: auto;
+    justify-content: end;
+    height: 4rem;
+    width: 100vw;
+    z-index: 100;
+    background-color: rgba(0, 0, 0,0.65);
+    position: fixed;
+}
+
+
+nav a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-align: center;
+    height: auto;
+    margin-right: 3rem;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    transition: 0.3s;
+    border-bottom: solid transparent;
 }
 
 .hero h1 {
     font-size: 75px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    margin-block: auto;
+    justify-content: center;
+    padding-block: 100px;
+}
+
+.sell-tick {
+    font-size: 30px;
+    border: transparent;
+    border-radius: 5rem ;
+    height: 5rem;
+    width: 15rem;
+    margin-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.651);
+    transition: 0.5s;
+}
+
+.sell-tick:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.651);
 }
 
 .hero h3 {
@@ -37,7 +96,21 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -100;
 }
+
+#schedule {
+    flex-direction: column;
+    background-color: rgb(17, 5, 0);
+}
+
+#schedule ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1rem;
+}
+
 
 @media (min-aspect-ratio: 16/9) {
     #backVideo {
