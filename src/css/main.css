@@ -99,7 +99,7 @@ nav a:hover {
 }
 
 #schedule {
-    z-index: 5;
+    z-index: 10;
     box-shadow: 0px 0px 20px 5px black;
     flex-direction: column;
     background-color: rgb(17, 5, 0);
@@ -136,13 +136,49 @@ nav a:hover {
 
 }
 
+#testimonials h1 {
+    font-size: 60px;
+}
+
+.testi-msg {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
 #testimonials {
-    z-index: 1;
-    background-color: gray;
+    background-image: url('../img/concert1.jpg');
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote {
+    font-size: 30px;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 35vw;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+blockquote cite {
+    padding-left: 2rem;
+}
+
+footer {
+    padding-right: 1rem;
+    display: flex;
+    justify-content: right;
+    background-color: black;
 }
 
 #FAQ {
-    color: black;
+    padding-inline: 10rem;
+    background-color: rgb(29, 18, 8);
+    display: grid;
+    gap: 1rem;
 }
 @media (min-aspect-ratio: 16/9) {
     #backVideo {
@@ -168,5 +204,19 @@ nav a:hover {
         justify-content: center;
         align-items: center;
         font-size: 4vw;
+    }
+
+    blockquote {
+        font-size: 20px;
+        width: 50vw;
+    }
+    
+    .testi-msg {
+        grid-template-columns: auto;
+        
+    }
+
+    #FAQ {
+        padding-inline: 3rem;
     }
 }
